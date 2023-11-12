@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		722899302B01875C000D7741 /* ProxyMacro in Frameworks */ = {isa = PBXBuildFile; productRef = 7228992F2B01875C000D7741 /* ProxyMacro */; };
 		728335682B0183420084455C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728335672B0183420084455C /* main.swift */; };
 		728335762B0183A20084455C /* ProxyMacro in Frameworks */ = {isa = PBXBuildFile; productRef = 728335752B0183A20084455C /* ProxyMacro */; };
 /* End PBXBuildFile section */
@@ -33,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				722899302B01875C000D7741 /* ProxyMacro in Frameworks */,
 				728335762B0183A20084455C /* ProxyMacro in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +84,7 @@
 			name = Example;
 			packageProductDependencies = (
 				728335752B0183A20084455C /* ProxyMacro */,
+				7228992F2B01875C000D7741 /* ProxyMacro */,
 			);
 			productName = Example;
 			productReference = 728335642B0183420084455C /* Example */;
@@ -112,7 +115,7 @@
 			);
 			mainGroup = 7283355B2B0183420084455C;
 			packageReferences = (
-				728335742B0183A20084455C /* XCLocalSwiftPackageReference "ProxyMacro" */,
+				7228992E2B01875C000D7741 /* XCLocalSwiftPackageReference ".." */,
 			);
 			productRefGroup = 728335652B0183420084455C /* Products */;
 			projectDirPath = "";
@@ -299,13 +302,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		728335742B0183A20084455C /* XCLocalSwiftPackageReference "ProxyMacro" */ = {
+		7228992E2B01875C000D7741 /* XCLocalSwiftPackageReference ".." */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ProxyMacro;
+			relativePath = ..;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7228992F2B01875C000D7741 /* ProxyMacro */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ProxyMacro;
+		};
 		728335752B0183A20084455C /* ProxyMacro */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ProxyMacro;
