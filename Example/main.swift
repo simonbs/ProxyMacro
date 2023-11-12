@@ -10,7 +10,7 @@ final class StateStore {
 
 final class MyObj {
     @Proxy(\Self.stateStore.number)
-    var number: Int = 42
+    var number: Int
 
     private let stateStore = StateStore()
 }
