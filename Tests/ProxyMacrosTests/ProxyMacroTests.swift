@@ -1,13 +1,13 @@
 import SwiftSyntaxMacros
 import SwiftSyntaxMacrosTestSupport
 import XCTest
-#if canImport(ExperimentsMacros)
-import ExperimentsMacros
+#if canImport(ProxyMacros)
+import ProxyMacros
 #endif
 
 final class ProxyMacroTests: XCTestCase {
     func testItGeneratesGetterAndSetter() throws {
-        #if canImport(ExperimentsMacros)
+        #if canImport(ProxyMacros)
         assertMacroExpansion(
             """
             final class Parent {
