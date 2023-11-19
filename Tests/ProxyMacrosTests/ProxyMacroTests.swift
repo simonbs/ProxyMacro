@@ -5,13 +5,13 @@ import XCTest
 import ExperimentsMacros
 #endif
 
-final class RunestoneProxyMacroTests: XCTestCase {
+final class ProxyMacroTests: XCTestCase {
     func testItGeneratesGetterAndSetter() throws {
         #if canImport(ExperimentsMacros)
         assertMacroExpansion(
             """
             final class Parent {
-                @RunestoneProxy(\\Parent.state.foo)
+                @Proxy(\\Parent.state.foo)
                 var foo: String
 
                 private final class State {
@@ -40,7 +40,7 @@ final class RunestoneProxyMacroTests: XCTestCase {
             }
             """,
             macros: [
-                "RunestoneProxy": RunestoneProxyMacro.self
+                "Proxy": ProxyMacro.self
             ]
         )
         #else
